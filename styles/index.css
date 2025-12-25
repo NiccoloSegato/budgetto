@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(../assets/fonts/Satoshi-Variable.ttf) format("trueType");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    font-family: Satoshi, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: peachpuff;
+}
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: clamp(2.2rem, 8vw, 60px);
+    margin: 100px 0 0 0;
+}
+h2 {
+    margin-top: 50px;
+}
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#budget {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: calc(100% - 40px);
+}
+#budget-actual {
+    font-size: 40px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.progress-fill {
+    height: 100%;
+    background-color: coral;
+    width: 0;
+    border-radius: 15px 0 0 15px;
+    transition: width 0.5s ease-in-out;
+}
+#progressbar-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+#progressbar-footer p {
+    margin-bottom: 0;
+}
