@@ -1,29 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Page</title>
+    <title>Viaggio Irlanda | Riepilogo</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <main>
-        <h1>HONG KONG</h1>
-        <p>Tutte le info del viaggio di Niki e Gigi ad Hong Kong.</p>
-
-        <img src="assets/images/hongkong.png" alt="Hong Kong Skyline">
-
-        <h2>Budget</h2>
-        <div id="budget">
-            <p id="budget-actual">580€</p>
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 29%;"></div>
+        <section class="hero" aria-labelledby="page-title">
+            <div class="hero-copy">
+                <p class="eyebrow">28 luglio - 1 agosto</p>
+                <h1 id="page-title">Irlanda</h1>
+                <p class="lead">Riepilogo del viaggio tra Dublino e Cork: voli, alloggi e fondi rimanenti.</p>
             </div>
-            <div id="progressbar-footer">
-                <p>29%</p>
-                <p>2000€ goal</p>
+            <img src="assets/images/ireland-trip.png" alt="Paesaggio irlandese con due viaggiatori e una citta costiera">
+        </section>
+
+        <section class="summary-grid" aria-label="Riepilogo rapido">
+            <article class="summary-card">
+                <span class="label">Partenza</span>
+                <strong>28 luglio, 23:25</strong>
+                <p>Milano Malpensa</p>
+            </article>
+            <article class="summary-card">
+                <span class="label">Rientro</span>
+                <strong>1 agosto, 01:00</strong>
+                <p>Milano Bergamo</p>
+            </article>
+            <article class="summary-card highlight">
+                <span class="label">Fondi rimasti</span>
+                <strong>30€</strong>
+                <p>su 500€ iniziali</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="flights-title">
+            <div class="section-heading">
+                <p class="eyebrow">Voli</p>
+                <h2 id="flights-title">Itinerario aereo</h2>
             </div>
-        </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="date">28 lug</div>
+                    <div class="timeline-card">
+                        <div class="route">
+                            <div>
+                                <span class="airport">Milano Malpensa</span>
+                                <strong>23:25</strong>
+                                <p>Ora di Milano</p>
+                            </div>
+                            <div class="flight-code">FR7800</div>
+                            <div>
+                                <span class="airport">Dublino</span>
+                                <strong>01:00</strong>
+                                <p>Ora irlandese</p>
+                            </div>
+                        </div>
+                        <p class="operator">Ryanair</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="date">31 lug</div>
+                    <div class="timeline-card">
+                        <div class="route">
+                            <div>
+                                <span class="airport">Cork</span>
+                                <strong>21:30</strong>
+                                <p>Ora locale</p>
+                            </div>
+                            <div class="flight-code">FR9051</div>
+                            <div>
+                                <span class="airport">Milano Bergamo</span>
+                                <strong>01:00</strong>
+                                <p>1 agosto, ora di Bergamo</p>
+                            </div>
+                        </div>
+                        <p class="operator">Ryanair</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="stays-title">
+            <div class="section-heading">
+                <p class="eyebrow">Alloggi</p>
+                <h2 id="stays-title">Dove dormiamo</h2>
+            </div>
+
+            <div class="stays-grid">
+                <article class="stay-card">
+                    <span class="label">Dublino | notti 28-30 luglio</span>
+                    <h3>Parkgate - Double Ensuite Room</h3>
+                    <p>Airbnb</p>
+                    <address>Montpelier Hill, Stoneybatter, Dublin, Ireland</address>
+                </article>
+
+                <article class="stay-card">
+                    <span class="label">Cork | notte 30-31 luglio</span>
+                    <h3>Copley Court</h3>
+                    <p>Booking.com</p>
+                    <address>10 Copley Street, Cork, Irlanda</address>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="funds-title">
+            <div class="section-heading">
+                <p class="eyebrow">Budget</p>
+                <h2 id="funds-title">Fondi rimanenti</h2>
+            </div>
+
+            <div id="budget">
+                <div class="budget-top">
+                    <div>
+                        <p class="label">Disponibili</p>
+                        <p id="budget-actual">30€</p>
+                    </div>
+                    <div class="spent">
+                        <span>Spesi</span>
+                        <strong>470€</strong>
+                    </div>
+                </div>
+                <div class="progress-bar" aria-label="6 percento dei fondi iniziali rimanenti">
+                    <div class="progress-fill" style="width: 6%;"></div>
+                </div>
+                <div id="progressbar-footer">
+                    <p>6% rimasti</p>
+                    <p>500€ iniziali</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
